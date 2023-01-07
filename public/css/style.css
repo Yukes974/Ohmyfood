@@ -1,0 +1,14 @@
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box; /* Opera/IE 8+ */
+  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.block_page {
+  width: 1400px;
+}/*# sourceMappingURL=style.css.map */
