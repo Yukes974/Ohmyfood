@@ -12,6 +12,20 @@
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: black;
+}
+footer h4 {
+  color: white;
+}
+footer a {
+  color: white;
+}
+
 .index_nav ul li {
   position: relative;
   padding: 2%;
@@ -71,6 +85,10 @@
     margin-right: 10%;
   }
 }
+.index_main a {
+  color: black;
+}
+
 .index_section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
