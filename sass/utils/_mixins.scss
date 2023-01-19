@@ -1,3 +1,11 @@
+@mixin restaurant_new($new_position_top: $new_top, $new_position_right: $new_right, $new_color: $tertiary_color) {
+    top: $new_position_top;
+    right: $new_position_right;
+    background-color: $new_color;
+    $new_color: darken($new_color,40%);
+    color: $new_color;
+}
+
 @mixin heart_position($heart_position_top: $heart_top, $heart_position_right: $heart_right) {
     top: $heart_position_top;
     right: $heart_position_right;

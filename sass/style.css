@@ -21,10 +21,24 @@ section {
   border-radius: 11px;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
 }
-.restaurant_card__img {
+.restaurant_card__block_img {
+  position: relative;
+}
+.restaurant_card__block_img img {
   width: 100%;
   height: 160px;
   border-radius: 11px 11px 0 0;
+  z-index: -1;
+}
+.restaurant_card__block_img span {
+  position: absolute;
+  padding: 2%;
+  border-radius: 2px;
+  z-index: 1;
+  top: 10%;
+  right: 5%;
+  background-color: #99E2D0;
+  color: #278870;
 }
 .restaurant_card__content {
   display: grid;
@@ -37,10 +51,11 @@ section {
   display: inline-block;
   margin: 0 0 10% 10%;
 }
-.restaurant_card__content .content_heart {
+
+.content_heart {
   position: relative;
 }
-.restaurant_card__content .content_heart .fa-heart {
+.content_heart .fa-heart {
   position: absolute;
   top: 30%;
   right: 10%;
@@ -49,13 +64,13 @@ section {
   opacity: 1;
   transition: opacity 1000ms;
 }
-.restaurant_card__content .content_heart .fa-heart:hover {
+.content_heart .fa-heart:hover {
   opacity: 0;
 }
-.restaurant_card__content .content_heart .fa-heart:hover + .fa-heart--chosen {
+.content_heart .fa-heart:hover + .fa-heart--chosen {
   opacity: 1;
 }
-.restaurant_card__content .content_heart .fa-heart--chosen {
+.content_heart .fa-heart--chosen {
   position: absolute;
   top: 30%;
   right: 10%;

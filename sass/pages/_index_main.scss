@@ -7,10 +7,21 @@ section {
 .restaurant_card {
     border-radius: 11px;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
-    &__img {
-        width: 100%;
-        height: 160px;
-        border-radius: 11px 11px 0 0;
+    &__block_img {
+        position: relative;
+        & img {
+            width: 100%;
+            height: 160px;
+            border-radius: 11px 11px 0 0;
+            z-index: -1;
+        }
+        & span {
+            position: absolute;
+            padding: 2%;
+            border-radius: 2px;
+            z-index: 1;
+            @include restaurant_new;
+        }
     }
     &__content {
         display: grid;
@@ -22,33 +33,34 @@ section {
             display: inline-block;
             margin: 0 0 10% 10%;
         }
-        .content_heart {
-            position: relative;
-            .fa-heart {
-                position: absolute;
-                @include heart_position;
-                color: black;
-                z-index: 1;
-                opacity: 1;
-                transition: opacity 1000ms;
-                &:hover {
-                    opacity: 0;
-                }
-                &:hover + .fa-heart--chosen{
-                    opacity: 1;
-                }
-            }
-            .fa-heart--chosen {
-                position: absolute;
-                @include heart_position;
-                z-index: -1;
-                color: #B060DB;
-                /*color: rgb(255,121,218);
-                color: linear-gradient(49deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 40%);*/
-                opacity: 0;
-                transition: opacity 1000ms;
-            }
+    }
+}
+
+.content_heart {
+    position: relative;
+    .fa-heart {
+        position: absolute;
+        @include heart_position;
+        color: black;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 1000ms;
+        &:hover {
+            opacity: 0;
         }
+        &:hover + .fa-heart--chosen{
+            opacity: 1;
+        }
+    }
+    .fa-heart--chosen {
+        position: absolute;
+        @include heart_position;
+        z-index: -1;
+        color: #B060DB;
+        /*color: rgb(255,121,218);
+        color: linear-gradient(49deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 40%);*/
+        opacity: 0;
+        transition: opacity 1000ms;
     }
 }
 
