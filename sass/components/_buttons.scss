@@ -5,9 +5,11 @@
     border: none;
     border-radius: 40px;
     @include button_color;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     opacity: 1;
-    transform: opacity 0ms;
+    transition: all 400ms;
     &:hover {
-        opacity: 0.8;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        opacity: 0.8;  
     }
 }
