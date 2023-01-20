@@ -6,6 +6,10 @@
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
 }
 
+body {
+    margin: 0;
+}
+
 .block_page {
     width: 100%;
     max-width: 1400px;
