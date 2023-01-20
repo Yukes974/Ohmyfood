@@ -26,7 +26,9 @@
             padding: 2%;
             border-radius: 2px;
             z-index: 1;
-            @include restaurant_new;
+            top: 10%;
+            right: 5%;
+            @include restaurant_new_color;
         }
     }
     &__content {
@@ -46,7 +48,8 @@
     position: relative;
     .fa-heart {
         position: absolute;
-        @include heart_position;
+        top: $heart_top;
+        right: $heart_right;
         color: black;
         z-index: 1;
         opacity: 1;
@@ -60,7 +63,8 @@
     }
     .fa-heart--chosen {
         position: absolute;
-        @include heart_position;
+        top: $heart_top;
+        right: $heart_right;
         z-index: -1;
         color: #B060DB;
         /*color: rgb(255,121,218);
