@@ -5,7 +5,7 @@
 .search_input {
     height: 40px;
     text-align: center;
-    border: none;
+    border: 1px solid black;
     background-color: lighten(grey,40%);
     box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
 }
@@ -16,17 +16,13 @@
 
 .search_button {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    opacity: 1;
-    transition: opacity 1000ms;
-    &:hover {
-        opacity: 0.8;
-    }
 }
 
 @media all and (max-width:767px) {
 
     .search_input {
         width: 100%;
+        border: none;
     }
 }
 

@@ -1,5 +1,5 @@
-@mixin search_button_color($search_color_deg: $search_deg, $search_color_left: $secondary_color, $search_color_right: $primary_color) {
-    background: linear-gradient($search_color_deg, $search_color_left 0, $search_color_right 100%);
+@mixin button_color($button_color_deg: $button_deg, $button_color_left: $secondary_color, $button_color_right: $primary_color) {
+    background: linear-gradient($button_color_deg, $button_color_left 0, $button_color_right 100%);
 }
 
 @mixin restaurant_new_color($new_color: $tertiary_color) {
