@@ -1,6 +1,6 @@
 .index_main {
     a {
-        color: black;
+        color: $dark_color;
     }
 }
 
@@ -50,7 +50,7 @@
         position: absolute;
         top: $heart_top;
         right: $heart_right;
-        color: black;
+        color: $dark_color;
         z-index: 1;
         opacity: 1;
         transition: opacity 1000ms;

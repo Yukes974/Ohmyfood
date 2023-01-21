@@ -1,9 +1,9 @@
 footer {
     padding: 1% 4% 3% 3%;
-    background-color: black;
+    background-color: lighten($dark_color, 20%);
     h4 {
         font-family: "Shrikhand", sans-serif;
-        color: white;
+        color: $char_color;
     }
     ul {
         display: flex;
@@ -11,7 +11,7 @@ footer {
         margin: 0;
         padding: 0;
         a {
-            color: white;
+            color: $char_color;
             div {
                 margin-right: 5%;
             }

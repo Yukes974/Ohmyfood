@@ -5,8 +5,8 @@
 .search_input {
     height: 40px;
     text-align: center;
-    border: 1px solid black;
-    background-color: lighten(grey,40%);
+    border: 1px solid $dark_color;
+    background-color: lighten($gloomy_color,40%);
     box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
 }
 

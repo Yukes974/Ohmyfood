@@ -1,7 +1,7 @@
 .button {
     width: 200px;
     height: 50px;
-    color: white;
+    color: $char_color;
     border: none;
     border-radius: 40px;
     @include button_color;
