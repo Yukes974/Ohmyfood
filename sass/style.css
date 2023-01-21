@@ -107,6 +107,11 @@ footer ul a div {
   margin: 4%;
 }
 
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .block_icon_search_input {
+    width: 30%;
+  }
+}
 @media all and (max-width: 767px) {
   .index_header {
     margin-bottom: 25%;
@@ -127,6 +132,7 @@ footer ul a div {
 .index_nav ul {
   display: flex;
   justify-content: space-between;
+  padding-left: 1%;
 }
 .index_nav ul li {
   position: relative;
@@ -171,6 +177,18 @@ footer ul a div {
   font-weight: bold;
 }
 
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .index_nav {
+    margin-bottom: 10%;
+  }
+  .index_nav ul {
+    flex-wrap: wrap;
+    padding-left: 1.5%;
+  }
+  .list_number {
+    bottom: 27%;
+  }
+}
 @media all and (max-width: 767px) {
   .index_nav {
     margin-bottom: 20%;
@@ -178,7 +196,7 @@ footer ul a div {
   }
   .index_nav ul {
     flex-direction: column;
-    padding: 0 0 0 4%;
+    padding-left: 4%;
   }
   .index_nav ul li {
     width: 100%;
@@ -270,6 +288,12 @@ footer ul a div {
   transition: opacity 1000ms;
 }
 
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .index_section {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+}
 @media all and (max-width: 767px) {
   .index_main {
     margin-bottom: 17%;

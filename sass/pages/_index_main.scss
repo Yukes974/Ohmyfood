@@ -73,6 +73,14 @@
     }
 }
 
+@media all and (min-width:768px) and (max-width:992px) {
+
+    .index_section {
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+}
+
 @media all and (max-width:767px) {
 
     .index_main {

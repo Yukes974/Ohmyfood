@@ -4,6 +4,7 @@
     ul {
         display: flex;
         justify-content: space-between;
+        padding-left: 1%;
         li {
             position: relative;
             width: 260px;
@@ -49,6 +50,21 @@
     }
 }
 
+@media all and (min-width:768px) and (max-width:992px) {
+
+    .index_nav {
+        margin-bottom: 10%;
+        ul {
+            flex-wrap: wrap;
+            padding-left: 1.5%;
+        }
+    }
+    
+    .list_number {
+        bottom: 27%;
+    }
+}
+
 @media all and (max-width:767px) {
 
     .index_nav {
@@ -56,7 +72,7 @@
         padding: 0 5% 0 5%;
         ul {
             flex-direction: column;
-            padding: 0 0 0 4%;
+            padding-left: 4%;
             li {
                 width: 100%;
                 padding: 5%;
