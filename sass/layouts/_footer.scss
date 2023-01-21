@@ -1,9 +1,43 @@
 footer {
+    padding: 1% 4% 3% 3%;
     background-color: black;
     h4 {
+        font-family: "Shrikhand", sans-serif;
         color: white;
     }
-    a {
-        color: white;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        a {
+            color: white;
+            li {
+                display: flex;
+                margin-bottom: 2%;
+                div {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 2%;
+                }
+            }
+        }
+    }
+}
+
+.footer_icon_subtitle {
+    width: 190px;
+}
+
+@media all and (max-width:767px) {
+
+    footer {
+        padding: 2% 0 7% 7%;
+        ul {
+            flex-direction: column;
+            li {
+                margin-bottom: 2%;
+            }
+        }
     }
 }
