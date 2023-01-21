@@ -121,6 +121,7 @@ footer ul a div {
   }
 }
 .index_nav {
+  padding: 0 2% 0 2%;
   margin-bottom: 5%;
 }
 .index_nav ul {
@@ -173,13 +174,14 @@ footer ul a div {
 @media all and (max-width: 767px) {
   .index_nav {
     margin-bottom: 20%;
+    padding: 0 5% 0 5%;
   }
   .index_nav ul {
     flex-direction: column;
+    padding: 0 0 0 4%;
   }
   .index_nav ul li {
     width: 100%;
-    right: 7%;
     padding: 5%;
     margin-bottom: 7%;
     border-radius: 20px;
@@ -193,6 +195,7 @@ footer ul a div {
   }
 }
 .index_main {
+  padding: 0 2% 0 2%;
   margin-bottom: 5%;
 }
 .index_main a {
@@ -270,6 +273,7 @@ footer ul a div {
 @media all and (max-width: 767px) {
   .index_main {
     margin-bottom: 17%;
+    padding: 0 5% 0 5%;
   }
   .restaurant_card {
     grid-column: 1/5;
