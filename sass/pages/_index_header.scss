@@ -2,10 +2,18 @@
     text-align: center;
 }
 
+.block_icon_search_input {
+    display: inline-block;
+    width: 20%;
+    padding-left: 4%;
+    border: 1px solid $dark_color;
+    background-color: lighten($gloomy_color,40%);
+    box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
+}
+
 .search_input {
     height: 40px;
-    text-align: center;
-    border: 1px solid $dark_color;
+    border: none;
     background-color: lighten($gloomy_color,40%);
     box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
 }
@@ -16,9 +24,13 @@
 
 @media all and (max-width:767px) {
 
-    .search_input {
+    .block_icon_search_input {
         width: 100%;
+        padding-left: 4%;
         border: none;
+        i {
+            margin: 2%;
+        }
     }
 }
 
