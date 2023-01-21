@@ -12,21 +12,16 @@ footer {
         padding: 0;
         a {
             color: white;
-            li {
-                display: flex;
-                margin-bottom: 2%;
-                div {
-                    width: 20px;
-                    height: 20px;
-                    margin-right: 2%;
-                }
+            div {
+                margin-right: 5%;
             }
         }
     }
 }
 
 .footer_icon_subtitle {
-    width: 190px;
+    display: flex;
+    width: 200px;
 }
 
 @media all and (max-width:767px) {
@@ -37,6 +32,10 @@ footer {
             flex-direction: column;
             li {
                 margin-bottom: 2%;
+                div {
+                    width: 20px;
+                    height: 20px;
+                }
             }
         }
     }
