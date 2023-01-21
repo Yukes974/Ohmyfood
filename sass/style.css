@@ -84,6 +84,7 @@ footer ul a div {
 }
 .index_header {
   text-align: center;
+  margin-bottom: 10%;
 }
 
 .block_icon_search_input {
@@ -107,6 +108,9 @@ footer ul a div {
 }
 
 @media all and (max-width: 767px) {
+  .index_header {
+    margin-bottom: 25%;
+  }
   .block_icon_search_input {
     width: 100%;
     padding-left: 4%;
@@ -115,6 +119,9 @@ footer ul a div {
   .block_icon_search_input i {
     margin: 2%;
   }
+}
+.index_nav {
+  margin-bottom: 5%;
 }
 .index_nav ul {
   display: flex;
@@ -164,6 +171,9 @@ footer ul a div {
 }
 
 @media all and (max-width: 767px) {
+  .index_nav {
+    margin-bottom: 20%;
+  }
   .index_nav ul {
     flex-direction: column;
   }
@@ -181,6 +191,9 @@ footer ul a div {
   .index_nav_icon_title div {
     margin-left: 5%;
   }
+}
+.index_main {
+  margin-bottom: 5%;
 }
 .index_main a {
   color: black;
@@ -255,6 +268,9 @@ footer ul a div {
 }
 
 @media all and (max-width: 767px) {
+  .index_main {
+    margin-bottom: 17%;
+  }
   .restaurant_card {
     grid-column: 1/5;
   }

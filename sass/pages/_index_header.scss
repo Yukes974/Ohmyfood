@@ -1,5 +1,6 @@
 .index_header {
     text-align: center;
+    margin-bottom: 10%;
 }
 
 .block_icon_search_input {
@@ -23,6 +24,10 @@
 }
 
 @media all and (max-width:767px) {
+
+    .index_header {
+        margin-bottom: 25%;
+    }
 
     .block_icon_search_input {
         width: 100%;

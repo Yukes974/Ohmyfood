@@ -1,4 +1,5 @@
 .index_nav {
+    margin-bottom: 5%;
     ul {
         display: flex;
         justify-content: space-between;
@@ -50,6 +51,7 @@
 @media all and (max-width:767px) {
 
     .index_nav {
+        margin-bottom: 20%;
         ul {
             flex-direction: column;
             li {
