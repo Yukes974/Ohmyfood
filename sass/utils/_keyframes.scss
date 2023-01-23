@@ -1,0 +1,9 @@
+@keyframes load_spinner_bar {
+    from {
+        color: $secondary_color;
+    }
+
+    to {
+        color: $primary_color;
+    }
+}
