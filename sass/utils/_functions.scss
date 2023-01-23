@@ -1,5 +1,5 @@
-@function anim_delay ($load_spinner: $anim_dur, $count: $i) {
-    $anim_delay: calc($load_spinner / 8);
+@function anim_delay ($load_spinner_dur, $count) {
+    $anim_delay: calc($load_spinner_dur / 8);
     $anim_delay: calc($anim_delay * $count);
-    @return $anim_delay
+    @return $anim_delay;
 }

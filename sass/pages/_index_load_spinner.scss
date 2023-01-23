@@ -9,7 +9,7 @@
             animation: load_spinner_bar $anim_dur infinite;
             @for $i from 1 through 8 {
                 &--#{$i} {
-                    animation-delay: anim_delay();
+                    animation-delay: anim_delay($anim_dur, $i);
                 }
             }
         }
