@@ -4,11 +4,10 @@
         justify-content: center;
         font-size: 3em;
         .letters {
-            transform-origin: 0% 50%;
-            color: pink;
-            animation: load_spinner_bar $anim_dur infinite;
             @for $i from 1 through 8 {
                 &--#{$i} {
+                    font-family: "Shrikhand", sans-serif;
+                    animation: load_spinner_bar $anim_dur infinite;
                     animation-delay: anim_delay($anim_dur, $i);
                 }
             }
