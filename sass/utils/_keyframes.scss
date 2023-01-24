@@ -1,20 +1,20 @@
 @keyframes load_spinner_background {
     from {
-        visibility: hidden;
+        opacity: 1;
     }
 
     to {
-        visibility: visible;
+        opacity: 0;
     }
 }
 
 @keyframes load_spinner_block {
     from {
-        visibility: visible;
+        opacity: 0;
     }
 
     to {
-        visibility: hidden;
+        opacity: 1;
     }
 }
 

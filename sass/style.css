@@ -1,33 +1,33 @@
 @-webkit-keyframes load_spinner_background {
   from {
-    visibility: hidden;
+    opacity: 1;
   }
   to {
-    visibility: visible;
+    opacity: 0;
   }
 }
 @keyframes load_spinner_background {
   from {
-    visibility: hidden;
+    opacity: 1;
   }
   to {
-    visibility: visible;
+    opacity: 0;
   }
 }
 @-webkit-keyframes load_spinner_block {
   from {
-    visibility: visible;
+    opacity: 0;
   }
   to {
-    visibility: hidden;
+    opacity: 1;
   }
 }
 @keyframes load_spinner_block {
   from {
-    visibility: visible;
+    opacity: 0;
   }
   to {
-    visibility: hidden;
+    opacity: 1;
   }
 }
 @-webkit-keyframes load_spinner_bar {
@@ -131,7 +131,7 @@ footer ul a div {
   }
 }
 .load_spinner {
-  visibility: hidden;
+  opacity: 0;
   -webkit-animation: load_spinner_block 3000ms;
           animation: load_spinner_block 3000ms;
 }

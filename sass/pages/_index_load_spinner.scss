@@ -1,5 +1,5 @@
 .load_spinner {
-    visibility: hidden;
+    opacity: 0;
     animation: load_spinner_block $anim_dur;
     &__bar {
         display: flex;
