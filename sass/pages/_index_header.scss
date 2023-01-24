@@ -1,6 +1,7 @@
 .index_header {
+    visibility: visible;
     text-align: center;
-    margin-bottom: 10%;
+    animation: load_spinner_background $anim_dur;
 }
 
 .block_icon_search_input {

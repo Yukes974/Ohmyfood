@@ -1,6 +1,7 @@
 .index_main {
     padding: 0 2% 0 2%;
     margin-bottom: 5%;
+    animation: load_spinner_background $anim_dur;
     a {
         color: $dark_color;
     }

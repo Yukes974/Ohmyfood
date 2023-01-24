@@ -1,3 +1,23 @@
+@keyframes load_spinner_background {
+    from {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes load_spinner_block {
+    from {
+        visibility: visible;
+    }
+
+    to {
+        visibility: hidden;
+    }
+}
+
 @keyframes load_spinner_bar {
     from {
         color: $secondary_color;
