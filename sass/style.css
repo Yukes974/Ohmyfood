@@ -84,11 +84,85 @@ a {
   opacity: 0.8;
 }
 
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 80px;
+}
+.header div {
+  width: 95%;
+  margin: 1% 0 1% 0;
+  padding-left: 37%;
+}
+.header div img {
+  height: 50px;
+  width: 20%;
+}
+.header nav {
+  width: 5%;
+  text-align: center;
+}
+
 h1 {
-  font-family: "Shrikhand", sans-serif;
   margin-bottom: 2%;
 }
 
+.background_img {
+  background-image: url("stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+@media all and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
+  .header div {
+    width: 85%;
+    padding-left: 10%;
+  }
+  .header div img {
+    height: 30px;
+    width: 60%;
+  }
+  .header nav {
+    width: 15%;
+  }
+}
+.h1_heart {
+  display: flex;
+}
+
+.h1 {
+  width: 50%;
+  text-align: right;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5em;
+}
+
+.heart {
+  width: 20%;
+  display: flex;
+  padding-left: 2%;
+}
+
+.heart_position {
+  top: 30%;
+}
+
+.button_position {
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 767px) {
+  .h1 {
+    width: 70%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
 footer {
   padding: 1% 4% 3% 3%;
   background-color: #333333;
@@ -198,10 +272,13 @@ footer ul a div {
 }
 
 .index_header {
-  visibility: visible;
   text-align: center;
   -webkit-animation: load_spinner_background 3000ms;
           animation: load_spinner_background 3000ms;
+}
+.index_header div img {
+  height: 30px;
+  width: 10%;
 }
 
 .block_icon_search_input {
@@ -225,6 +302,9 @@ footer ul a div {
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
+  .index_header div img {
+    width: 15%;
+  }
   .block_icon_search_input {
     width: 30%;
   }
@@ -232,6 +312,9 @@ footer ul a div {
 @media all and (max-width: 767px) {
   .index_header {
     margin-bottom: 25%;
+  }
+  .index_header div img {
+    width: 35%;
   }
   .block_icon_search_input {
     width: 100%;
@@ -385,8 +468,6 @@ footer ul a div {
 }
 .content_heart .fa-heart {
   position: absolute;
-  top: 30%;
-  right: 10%;
   color: black;
   opacity: 1;
   transition: opacity 1000ms;
@@ -399,14 +480,17 @@ footer ul a div {
 }
 .content_heart .fa-heart--chosen {
   position: absolute;
-  top: 30%;
-  right: 10%;
   z-index: -1;
   color: #B060DB;
   /*color: rgb(255,121,218);
   color: linear-gradient(49deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 40%);*/
   opacity: 0;
   transition: opacity 1000ms;
+}
+
+.index_heart_position {
+  top: 30%;
+  right: 10%;
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {

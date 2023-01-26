@@ -48,9 +48,7 @@
 .content_heart {
     position: relative;
     .fa-heart {
-        position: absolute;
-        top: $heart_top;
-        right: $heart_right;
+        position: absolute;     
         color: $dark_color;
         opacity: 1;
         transition: opacity 1000ms;
@@ -63,8 +61,6 @@
     }
     .fa-heart--chosen {
         position: absolute;
-        top: $heart_top;
-        right: $heart_right;
         z-index: -1;
         color: #B060DB;
         /*color: rgb(255,121,218);
@@ -72,6 +68,11 @@
         opacity: 0;
         transition: opacity 1000ms;
     }
+}
+
+.index_heart_position {
+    top: $heart_top;
+    right: $heart_right;
 }
 
 @media all and (min-width:768px) and (max-width:992px) {

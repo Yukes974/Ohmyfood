@@ -1,4 +1,45 @@
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 80px;
+    div {
+        width: 95%;
+        margin: 1% 0 1% 0;
+        padding-left: 37%;
+        img {
+            height: 50px;
+            width: 20%;
+        }
+    }
+    nav {
+        width: 5%;
+        text-align: center;
+    }
+}
+
 h1 {
-    font-family: "Shrikhand", sans-serif;
     margin-bottom: 2%;
+}
+
+.background_img {
+    background-image: url('stil-u2Lp8tXIcjw-unsplash.jpg');
+}
+
+@media all and (max-width:767px) {
+    
+    .header {
+        height: 60px;
+        div {
+            width: 85%;
+            padding-left: 10%;
+            img {
+                height: 30px;
+                width: 60%;
+            }
+        }
+        nav {
+            width: 15%;
+        }
+    }
 }

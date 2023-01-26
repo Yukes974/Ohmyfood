@@ -3,34 +3,197 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" rel="/public/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c814831d88.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="sass/style.css" />
         <title>Ohmyfood - La note enchantée</title>
     </head>
     <body>
-        <header>
-
-        </header>
-        <main>
-
-        </main>
-        <footer>
-            <h4>
-                ohmyfood
-            </h4>
-            <ul>
-                <a href="">
-                    <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
-                </a>
-                <a href="">
-                    <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
-                </a>
-                <a href="">
-                    <li>Mentions légales</li>
-                </a>
-                <a href="mailto:contact@ohmyfood.fr">
-                    <li>Contact</li>
-                </a>
-            </ul>
-        </footer>
+        <div class="block_page background_img">
+            <header class="header">
+                <div>
+                    <img src="public/images/logo/ohmyfood.png" alt="">
+                </div>
+                <nav>
+                    <a href="index.html">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </nav>
+            </header>
+            <main>
+                <div class="h1_heart">
+                    <h1 class="h1">
+                        La note enchantée
+                    </h1>
+                    <div class="heart">
+                        <div class="content_heart">
+                            <i class="fa-regular fa-heart heart_position"></i>
+                            <i class="fa-solid fa-heart fa-heart--chosen heart_position"></i>
+                        </div>
+                    </div>
+                </div>
+                <form method="post" action="send_data.php">
+                    <fieldset>
+                        <legend>
+                            Entrées
+                        </legend>
+                        <p>
+                            <label for="ravioles">
+                                Ravioles de foie gras <br/>
+                                Accompagnées de leur crème à la truffe
+                            </label>
+                            <span>
+                                25€
+                            </span>
+                            <input type="checkbox" name="ravioles" id="ravioles">
+                        </p>
+                        <p>
+                            <label for="caviar">
+                                Caviar osciètre <br/>
+                                Sur blini à la farine de blé noir
+                            </label>
+                            <span>
+                                35€
+                            </span>
+                            <input type="checkbox" name="caviar" id="caviar">
+                        </p>
+                        <p>
+                            <label for="homar">
+                                Homar et espuma de... <br/>
+                                Marinés aux zestes d'orange
+                            </label>
+                            <span>
+                                20€
+                            </span>
+                            <input type="checkbox" name="homar" id="homar">
+                        </p>
+                        <p>
+                            <label for="foie_canard_entier">
+                                Foie gras de canard cuit entier <br/>
+                                Confiture de figue et pain toasté
+                            </label>
+                            <span>
+                                35€
+                            </span>
+                            <input type="checkbox" name="foie_canard_entier" id="foie_canard_entier">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Plats
+                        </legend>
+                        <p>
+                            <label for="noix_coquilles">
+                                Noix de coquilles Saint-Jacques <br/>
+                                Sur lit de purée de céléri-rave
+                            </label>
+                            <span>
+                                40€
+                            </span>
+                            <input type="checkbox" name="noix_coquilles" id="noix_coquilles">
+                        </p>
+                        <p>
+                            <label for="langoustine">
+                                Langoustine poêlée <br/>
+                                Et purée de patate douce
+                            </label>
+                            <span>
+                                35€
+                            </span>
+                            <input type="checkbox" name="langoustine" id="langoustine">
+                        </p>
+                        <p>
+                            <label for="mijote_queue_boeuf">
+                                Mijoté de queue de boeuf <br/>
+                                Et riz sauvage aux zestes de citron
+                            </label>
+                            <span>
+                                44€
+                            </span>
+                            <input type="checkbox" name="mijote_queue_boeuf" id="mijote_queue_boeuf">
+                        </p>  
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Desserts
+                        </legend>
+                        <p>
+                            <label for="macaron">
+                                Macaron noisette et chocolat <br/>
+                                Glace au caramel brun et sel de Guérande
+                            </label>
+                            <span>
+                                25€
+                            </span>
+                            <input type="checkbox" name="macaron" id="macaron">
+                        </p>
+                        <p>
+                            <label for="baba_rhum">
+                                Baba au rhum revisité  <br/>
+                                Avec son coulis de citron
+                            </label>
+                            <span>
+                                25€
+                            </span>
+                            <input type="checkbox" name="baba_rhum" id="baba_rhum">
+                        </p>
+                        <p>
+                            <label for="tarte_citron">
+                                Tarte au citron meringuéee <br/>
+                                Déstructurée
+                            </label>
+                            <span>
+                                25€
+                            </span>
+                            <input type="checkbox" name="tarte_citron" id="tarte_citron">
+                        </p>
+                    </fieldset>
+                    <div class="button_position">
+                        <input type="submit" value="Commander" class="button">
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <h4>
+                    ohmyfood
+                </h4>
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="footer_icon_subtitle">
+                                <div>
+                                    <i class="fa-solid fa-utensils"></i>
+                                </div>
+                                Proposer un restaurant
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="footer_icon_subtitle">
+                                <div>
+                                    <i class="fa-solid fa-handshake-angle"></i>
+                                </div>
+                                Devenir partenaire
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Mentions légales
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@ohmyfood.fr">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
     </body>
 </html>

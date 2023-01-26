@@ -1,7 +1,12 @@
 .index_header {
-    visibility: visible;
     text-align: center;
     animation: load_spinner_background $anim_dur;
+    div {
+        img {
+            height: 30px;
+            width: 10%;
+        }
+    }
 }
 
 .block_icon_search_input {
@@ -25,6 +30,14 @@
 }
 
 @media all and (min-width:768px) and (max-width:992px) {
+
+    .index_header {
+        div{
+            img {
+                width: 15%;
+            }
+        }
+    }
     
     .block_icon_search_input {
         width: 30%;
@@ -35,6 +48,11 @@
 
     .index_header {
         margin-bottom: 25%;
+        div {
+            img {
+                width: 35%;
+            }
+        }
     }
 
     .block_icon_search_input {
