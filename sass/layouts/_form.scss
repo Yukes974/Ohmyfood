@@ -1,0 +1,22 @@
+fieldset {
+    div {
+        display: flex;
+        height: 50px;
+        label {
+            display: inline-block;
+            width: 95%;
+            &:focus + .anim_validation {
+                width: 10%;
+                transform-origin: right 50%;
+                animation: form_validation 2000ms;
+            }
+        }
+    }
+}
+
+.anim_validation {
+    background-color: pink;
+    width: 2%;
+    height: 100%;
+    opacity: 0;
+}

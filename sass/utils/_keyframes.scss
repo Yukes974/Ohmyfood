@@ -27,3 +27,15 @@
         color: $primary_color;
     }
 }
+
+@keyframes form_validation {
+    from {
+        transform: scaleX(0);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
