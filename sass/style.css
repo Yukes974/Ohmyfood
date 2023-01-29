@@ -48,22 +48,34 @@
 }
 @-webkit-keyframes form_validation {
   from {
-    transform: scaleX(0);
-    opacity: 0.5;
+    width: 0;
   }
   to {
-    transform: scaleX(1);
-    opacity: 1;
+    width: 5%;
   }
 }
 @keyframes form_validation {
   from {
-    transform: scaleX(0);
-    opacity: 0.5;
+    width: 0;
   }
   to {
-    transform: scaleX(1);
-    opacity: 1;
+    width: 5%;
+  }
+}
+@-webkit-keyframes form_span {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30px);
+  }
+}
+@keyframes form_span {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30px);
   }
 }
 * {
@@ -105,24 +117,34 @@ a {
 }
 
 fieldset div {
+  position: relative;
   display: flex;
   height: 50px;
+  background-color: red;
+  z-index: 1;
+}
+fieldset div:hover .anim_validation {
+  width: 5%;
+  opacity: 1;
+  transform-origin: right 50%;
+  -webkit-animation: form_validation 2000ms;
+          animation: form_validation 2000ms;
+}
+fieldset div:hover span {
+  transform: translateX(-30px);
+  -webkit-animation: form_span 2000ms;
+          animation: form_span 2000ms;
 }
 fieldset div label {
   display: inline-block;
   width: 95%;
 }
-fieldset div label:focus + .anim_validation {
-  width: 10%;
-  transform-origin: right 50%;
-  -webkit-animation: form_validation 2000ms;
-          animation: form_validation 2000ms;
-}
 
 .anim_validation {
-  background-color: pink;
-  width: 2%;
+  position: absolute;
+  background-color: #99E2D0;
   height: 100%;
+  right: 0;
   opacity: 0;
 }
 

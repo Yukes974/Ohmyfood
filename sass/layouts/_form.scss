@@ -1,22 +1,31 @@
 fieldset {
     div {
+        position: relative;
         display: flex;
         height: 50px;
+        background-color: red;
+        z-index: 1;
+        &:hover .anim_validation {
+            width: 5%;
+            opacity: 1;
+            transform-origin: right 50%;
+            animation: form_validation 2000ms;
+        }
+        &:hover span {
+            transform: translateX(-30px);
+            animation: form_span 2000ms;
+        }
         label {
             display: inline-block;
             width: 95%;
-            &:focus + .anim_validation {
-                width: 10%;
-                transform-origin: right 50%;
-                animation: form_validation 2000ms;
-            }
         }
     }
 }
 
 .anim_validation {
-    background-color: pink;
-    width: 2%;
+    position: absolute;
+    background-color: $tertiary_color;
     height: 100%;
+    right: 0;
     opacity: 0;
 }

@@ -30,12 +30,20 @@
 
 @keyframes form_validation {
     from {
-        transform: scaleX(0);
-        opacity: 0.5;
+        width: 0;
     }
 
     to {
-        transform: scaleX(1);
-        opacity: 1;
+        width: 5%;
+    }
+}
+
+@keyframes form_span {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-30px);
     }
 }
