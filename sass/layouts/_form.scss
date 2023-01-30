@@ -10,20 +10,58 @@ fieldset {
 }
 
 .menu {
-    @for $i from 1 through 4 {
-        &--#{$i} {
-            height: 50px;
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding-left: 1%;
-            margin-bottom: 1%;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            animation: menu $anim_dur;
-            animation-delay: anim_delay($anim_dur, $i, 4);
+    &__entree_note {
+        @for $i from 1 through 4 {
+            &--#{$i} {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 1%;
+                margin-bottom: 1%;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                animation: menu $anim_dur;
+                animation-delay: anim_delay($anim_dur, $i, 4);
+            }
+        }
+    }
+    &__plats {
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 1%;
+                margin-bottom: 1%;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                animation: menu $anim_dur;
+                animation-delay: anim_delay($anim_dur, $i, 3);
+            }
+        }
+    }
+    &__desserts {
+        @for $i from 1 through 3 {
+            &--#{$i} {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 1%;
+                margin-bottom: 1%;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                animation: menu $anim_dur;
+                animation-delay: anim_delay($anim_dur, $i, 3);
+            }
         }
     }
     &:hover .anim_validation {
