@@ -1,5 +1,5 @@
-@function anim_delay ($anim_delay, $count) {
-    $anim_delay: calc($anim_delay / 8);
+@function anim_delay ($anim_delay, $count, $anim_nb_total) {
+    $anim_delay: calc($anim_delay / $anim_nb_total);
     $anim_delay: calc($anim_delay * $count);
     @return $anim_delay;
 }

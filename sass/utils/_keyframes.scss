@@ -28,22 +28,14 @@
     }
 }
 
-@keyframes form_validation {
+@keyframes menu {
     from {
-        width: 0;
+        opacity: 0;
+        transform: translateY(20px);
     }
 
     to {
-        width: 5%;
-    }
-}
-
-@keyframes form_span {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-30px);
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -10,7 +10,7 @@
                 &--#{$i} {
                     font-family: "Shrikhand", sans-serif;
                     animation: load_spinner_bar $anim_dur infinite;
-                    animation-delay: anim_delay($anim_dur, $i);
+                    animation-delay: anim_delay($anim_dur, $i, 8);
                 }
             }
         }
