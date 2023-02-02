@@ -1,5 +1,9 @@
 .load_spinner {
-    opacity: 0;
+    visibility: hidden;
+    width: 100vh;
+    height: 100vh;
+    background-color: blue;
+    position: fixed;
     animation: load_spinner_block $anim_dur;
     &__bar {
         display: flex;

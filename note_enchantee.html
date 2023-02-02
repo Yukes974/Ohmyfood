@@ -13,7 +13,7 @@
         <title>Ohmyfood - La note enchantée</title>
     </head>
     <body>
-        <div class="block_page background_img">
+        <div class="block_page">
             <header class="header">
                 <div>
                     <img src="public/images/logo/ohmyfood.png" alt="">
@@ -24,6 +24,9 @@
                     </a>
                 </nav>
             </header>
+            <div class="background_img">
+                <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+            </div>
             <main>
                 <div class="h1_heart">
                     <h1 class="h1">
@@ -36,199 +39,227 @@
                         </div>
                     </div>
                 </div>
-                <form method="post" action="send_data.php">
-                    <fieldset>
-                        <legend>
-                            ENTRÉES
-                        </legend>
-                        <div class="underline"></div>
-                        <div class="menu">
-                            <div class="menu__entree_note--1">
-                                <label for="ravioles">
-                                    Ravioles de foie gras <br/>
+                <section>
+                    <h2 class="section_title">
+                        ENTRÉES
+                    </h2>
+                    <div class="underline"></div>
+                    <div class="menu">
+                        <div class="menu__entree_note--1">
+                            <div class="menu_dish_accompaniment">
+                                <h3>
+                                    Ravioles de foie gras
+                                </h3>
+                                <p>
                                     Accompagnées de leur crème à la truffe
-                                </label>
-                                <span>
-                                    25€
-                                </span>
-                                <input type="checkbox" name="ravioles" id="ravioles">
-                                <div class="anim_validation">
-                                    <div class="form_block_check">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
+                                </p>
+                            </div>
+                            <span>
+                                25€
+                            </span>
+                            <div class="anim_validation">
+                                <div class="block_check">
+                                    <i class="fa-solid fa-check"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="menu">
-                            <div class="menu__entree_note--2">
-                                <label for="caviar">
-                                    Caviar osciètre <br/>
-                                    Sur blini à la farine de blé noir
-                                </label>
-                                <span>
-                                    35€
-                                </span>
-                                <input type="checkbox" name="caviar" id="caviar">
-                                <div class="anim_validation">
-                                    <div class="form_block_check">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu">
-                            <div class="menu__entree_note--3">
-                                <label for="homar">
-                                    Homar et espuma de... <br/>
-                                    Marinés aux zestes d'orange
-                                </label>
-                                <span>
-                                    20€
-                                </span>
-                                <input type="checkbox" name="homar" id="homar">
-                                <div class="anim_validation">
-                                    <div class="form_block_check">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu">
-                            <div class="menu__entree_note--4">
-                                <label for="foie_canard_entier">
-                                    Foie gras de canard cuit entier <br/>
-                                    Confiture de figue et pain toasté
-                                </label>
-                                <span>
-                                    35€
-                                </span>
-                                <input type="checkbox" name="foie_canard_entier" id="foie_canard_entier">
-                                <div class="anim_validation">
-                                    <div class="form_block_check">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>
-                            PLATS
-                        </legend>
-                        <div class="underline"></div>
-                        <div class="menu">
-                            <div class="menu__plats--1">
-                                <label for="noix_coquilles">
-                                    Noix de coquilles Saint-Jacques <br/>
-                                    Sur lit de purée de céléri-rave
-                                </label>
-                                <span>
-                                    40€
-                                </span>
-                                <input type="checkbox" name="noix_coquilles" id="noix_coquilles">
-                                <div class="anim_validation">
-                                    <div class="form_block_check">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu">
-                            <div class="menu__plats--2">
-                                <label for="langoustine">
-                                    Langoustine poêlée <br/>
-                                    Et purée de patate douce
-                                </label>
-                                <span>
-                                    35€
-                                </span>
-                                <input type="checkbox" name="langoustine" id="langoustine">
-                                <div class="anim_validation">
-                                    <div class="form_block_check">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu">
-                            <div class="menu__plats--3">
-                                <label for="mijote_queue_boeuf">
-                                    Mijoté de queue de boeuf <br/>
-                                    Et riz sauvage aux zestes de citron
-                                </label>
-                                <span>
-                                    44€
-                                </span>
-                                <input type="checkbox" name="mijote_queue_boeuf" id="mijote_queue_boeuf">
-                                <div class="anim_validation">
-                                    <div class="form_block_check">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>
-                            DESSERTS
-                        </legend>
-                        <div class="underline"></div>
-                        <div class="menu">
-                            <div class="menu__desserts--1">
-                                <label for="macaron">
-                                    Macaron noisette et chocolat <br/>
-                                    Glace au caramel brun et sel de Guérande
-                                </label>
-                                <span>
-                                    25€
-                                </span>
-                                <input type="checkbox" name="macaron" id="macaron">
-                                <div class="anim_validation">
-                                    <div class="form_block_check">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu">
-                            <div class="menu__desserts--2">
-                                <label for="baba_rhum">
-                                    Baba au rhum revisité  <br/>
-                                    Avec son coulis de citron
-                                </label>
-                                <span>
-                                    25€
-                                </span>
-                                <input type="checkbox" name="baba_rhum" id="baba_rhum">
-                                <div class="anim_validation">
-                                    <div class="form_block_check">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu">
-                            <div class="menu__desserts--3">
-                                <label for="tarte_citron">
-                                    Tarte au citron meringuéee <br/>
-                                    Déstructurée
-                                </label>
-                                <span>
-                                    25€
-                                </span>
-                                <input type="checkbox" name="tarte_citron" id="tarte_citron">
-                                <div class="anim_validation">
-                                    <div class="form_block_check">
-                                        <i class="fa-solid fa-check"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <div class="button_position">
-                        <input type="submit" value="Commander" class="button">
                     </div>
-                </form>
+                    <div class="menu">
+                        <div class="menu__entree_note--2">
+                            <div class="menu_dish_accompaniment">
+                                <h3>
+                                    Caviar osciètre
+                                </h3>
+                                <p>
+                                    Sur blini à la farine de blé noir
+                                </p>
+                            </div>
+                            <span>
+                                35€
+                            </span>
+                            <div class="anim_validation">
+                                <div class="block_check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="menu__entree_note--3">
+                            <div class="menu_dish_accompaniment">
+                                <h3>
+                                    Homar et espuma de...
+                                </h3>
+                                <p>
+                                    Marinés aux zestes d'orange
+                                </p>
+                            </div>
+                            <span>
+                                20€
+                            </span>
+                            <div class="anim_validation">
+                                <div class="block_check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="menu__entree_note--4">
+                            <div class="menu_dish_accompaniment">
+                                <h3>
+                                    Foie gras de canard cuit entier
+                                </h3>
+                                <p>
+                                    Confiture de figue et pain toasté
+                                </p>
+                            </div>
+                            <span>
+                                35€
+                            </span>
+                            <div class="anim_validation">
+                                <div class="block_check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="section_title">
+                        PLATS
+                    </h3>
+                    <div class="underline"></div>
+                    <div class="menu">
+                        <div class="menu__plats--1">
+                            <div class="menu_dish_accompaniment">
+                                <h3>
+                                    Noix de coquilles Saint-Jacques
+                                </h3>
+                                <p>
+                                    Sur lit de purée de céléri-rave
+                                </p>
+                            </div>
+                            <span>
+                                40€
+                            </span>
+                            <div class="anim_validation">
+                                <div class="block_check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="menu__plats--2">
+                            <div class="menu_dish_accompaniment">
+                                <h3>
+                                    Langoustine poêlée
+                                </h3>
+                                <p>
+                                    Et purée de patate douce
+                                </p>
+                            </div>
+                            <span>
+                                35€
+                            </span>
+                            <div class="anim_validation">
+                                <div class="block_check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="menu__plats--3">
+                            <div class="menu_dish_accompaniment">
+                                <h3>
+                                    Mijoté de queue de boeuf
+                                </h3>
+                                <p>
+                                    Et riz sauvage aux zestes de citron
+                                </p>
+                            </div>
+                            <span>
+                                44€
+                            </span>
+                            <div class="anim_validation">
+                                <div class="block_check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="section_title">
+                        DESSERTS
+                    </h3>
+                    <div class="underline"></div>
+                    <div class="menu">
+                        <div class="menu__desserts--1">
+                            <div class="menu_dish_accompaniment">
+                                <h3>
+                                    Macaron noisette et chocolat
+                                </h3>
+                                <p>
+                                    Glace au caramel brun et sel de Guérande
+                                </p>
+                            </div>
+                            <span>
+                                25€
+                            </span>
+                            <div class="anim_validation">
+                                <div class="block_check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="menu__desserts--2">
+                            <div class="menu_dish_accompaniment">
+                                <h3>
+                                    Baba au rhum revisité
+                                </h3>
+                                <p>
+                                    Avec son coulis de citron
+                                </p>
+                            </div>
+                            <span>
+                                25€
+                            </span>
+                            <div class="anim_validation">
+                                <div class="block_check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="menu__desserts--3">
+                            <div class="menu_dish_accompaniment">
+                                <h3>
+                                    Tarte au citron meringuéee
+                                </h3>
+                                <p>
+                                    Déstructurée
+                                </p>
+                            </div>
+                            <span>
+                                25€
+                            </span>
+                            <div class="anim_validation">
+                                <div class="block_check">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="button_position">
+                    <input type="submit" value="Commander" class="button">
+                </div>
             </main>
             <footer>
                 <h4>
