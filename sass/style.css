@@ -128,17 +128,6 @@ h1 {
   margin-bottom: 2%;
 }
 
-.background_img {
-  width: 100%;
-  height: 400px;
-}
-.background_img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 @media all and (max-width: 767px) {
   .header {
     height: 60px;
@@ -154,13 +143,30 @@ h1 {
   .header nav {
     width: 15%;
   }
-  .background_img {
-    height: 250px;
-  }
 }
+.block_img_title {
+  position: relative;
+}
+
+.background_img {
+  width: 100%;
+  height: 400px;
+}
+.background_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .h1_heart {
+  width: 100%;
   display: flex;
-  border-radius: 20px;
+  position: absolute;
+  bottom: 0.1%;
+  background-color: #f3f3f3;
+  z-index: 1;
+  border-radius: 50px 50px 0 0;
 }
 
 .h1 {
@@ -182,24 +188,26 @@ h1 {
 
 section {
   margin-bottom: 2%;
+  padding: 0 2% 0 2%;
   border: none;
   background-color: #f3f3f3;
 }
 
 .section_title {
+  font-size: 130%;
+  font-weight: 100;
   margin: 0;
 }
 
 .underline {
-  width: 3%;
+  width: 4%;
   margin-bottom: 1%;
   border: 1px solid #99E2D0;
 }
 
 .menu__entree_note--1 {
-  height: 50px;
+  height: 70px;
   display: flex;
-  align-items: center;
   position: relative;
   padding-left: 1%;
   margin-bottom: 1%;
@@ -216,18 +224,17 @@ section {
   width: 95%;
 }
 .menu__entree_note--1 .menu_dish_accompaniment h3 {
-  margin: 0;
+  margin: 1% 0 0 0;
 }
 .menu__entree_note--1 .menu_dish_accompaniment p {
-  margin: 0;
+  margin: 0 0 1% 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu__entree_note--2 {
-  height: 50px;
+  height: 70px;
   display: flex;
-  align-items: center;
   position: relative;
   padding-left: 1%;
   margin-bottom: 1%;
@@ -244,18 +251,17 @@ section {
   width: 95%;
 }
 .menu__entree_note--2 .menu_dish_accompaniment h3 {
-  margin: 0;
+  margin: 1% 0 0 0;
 }
 .menu__entree_note--2 .menu_dish_accompaniment p {
-  margin: 0;
+  margin: 0 0 1% 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu__entree_note--3 {
-  height: 50px;
+  height: 70px;
   display: flex;
-  align-items: center;
   position: relative;
   padding-left: 1%;
   margin-bottom: 1%;
@@ -272,18 +278,17 @@ section {
   width: 95%;
 }
 .menu__entree_note--3 .menu_dish_accompaniment h3 {
-  margin: 0;
+  margin: 1% 0 0 0;
 }
 .menu__entree_note--3 .menu_dish_accompaniment p {
-  margin: 0;
+  margin: 0 0 1% 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu__entree_note--4 {
-  height: 50px;
+  height: 70px;
   display: flex;
-  align-items: center;
   position: relative;
   padding-left: 1%;
   margin-bottom: 1%;
@@ -300,18 +305,17 @@ section {
   width: 95%;
 }
 .menu__entree_note--4 .menu_dish_accompaniment h3 {
-  margin: 0;
+  margin: 1% 0 0 0;
 }
 .menu__entree_note--4 .menu_dish_accompaniment p {
-  margin: 0;
+  margin: 0 0 1% 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu__plats--1 {
-  height: 50px;
+  height: 70px;
   display: flex;
-  align-items: center;
   position: relative;
   padding-left: 1%;
   margin-bottom: 1%;
@@ -328,18 +332,17 @@ section {
   width: 95%;
 }
 .menu__plats--1 .menu_dish_accompaniment h3 {
-  margin: 0;
+  margin: 1% 0 0 0;
 }
 .menu__plats--1 .menu_dish_accompaniment p {
-  margin: 0;
+  margin: 0 0 1% 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu__plats--2 {
-  height: 50px;
+  height: 70px;
   display: flex;
-  align-items: center;
   position: relative;
   padding-left: 1%;
   margin-bottom: 1%;
@@ -356,18 +359,17 @@ section {
   width: 95%;
 }
 .menu__plats--2 .menu_dish_accompaniment h3 {
-  margin: 0;
+  margin: 1% 0 0 0;
 }
 .menu__plats--2 .menu_dish_accompaniment p {
-  margin: 0;
+  margin: 0 0 1% 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu__plats--3 {
-  height: 50px;
+  height: 70px;
   display: flex;
-  align-items: center;
   position: relative;
   padding-left: 1%;
   margin-bottom: 1%;
@@ -384,18 +386,17 @@ section {
   width: 95%;
 }
 .menu__plats--3 .menu_dish_accompaniment h3 {
-  margin: 0;
+  margin: 1% 0 0 0;
 }
 .menu__plats--3 .menu_dish_accompaniment p {
-  margin: 0;
+  margin: 0 0 1% 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu__desserts--1 {
-  height: 50px;
+  height: 70px;
   display: flex;
-  align-items: center;
   position: relative;
   padding-left: 1%;
   margin-bottom: 1%;
@@ -412,18 +413,17 @@ section {
   width: 95%;
 }
 .menu__desserts--1 .menu_dish_accompaniment h3 {
-  margin: 0;
+  margin: 1% 0 0 0;
 }
 .menu__desserts--1 .menu_dish_accompaniment p {
-  margin: 0;
+  margin: 0 0 1% 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu__desserts--2 {
-  height: 50px;
+  height: 70px;
   display: flex;
-  align-items: center;
   position: relative;
   padding-left: 1%;
   margin-bottom: 1%;
@@ -440,18 +440,17 @@ section {
   width: 95%;
 }
 .menu__desserts--2 .menu_dish_accompaniment h3 {
-  margin: 0;
+  margin: 1% 0 0 0;
 }
 .menu__desserts--2 .menu_dish_accompaniment p {
-  margin: 0;
+  margin: 0 0 1% 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .menu__desserts--3 {
-  height: 50px;
+  height: 70px;
   display: flex;
-  align-items: center;
   position: relative;
   padding-left: 1%;
   margin-bottom: 1%;
@@ -468,10 +467,10 @@ section {
   width: 95%;
 }
 .menu__desserts--3 .menu_dish_accompaniment h3 {
-  margin: 0;
+  margin: 1% 0 0 0;
 }
 .menu__desserts--3 .menu_dish_accompaniment p {
-  margin: 0;
+  margin: 0 0 1% 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -488,6 +487,7 @@ section {
 }
 .menu span {
   position: absolute;
+  bottom: 20%;
   right: 1%;
   transform: translateX(0);
   transition: transform 450ms;
@@ -530,13 +530,25 @@ section {
 }
 
 @media all and (max-width: 767px) {
+  .background_img {
+    height: 290px;
+  }
+  .h1_heart {
+    border-radius: 30px 30px 0 0;
+  }
   .h1 {
     width: 70%;
     font-size: 1.5em;
     text-align: center;
   }
+  .heart_position {
+    top: 45%;
+  }
   .menu:hover p {
-    width: 70%;
+    width: 75%;
+  }
+  .menu:hover .anim_validation {
+    width: 15%;
   }
 }
 footer {
