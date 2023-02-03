@@ -176,21 +176,44 @@ h1 {
   font-size: 1.5em;
 }
 
-.heart {
-  width: 20%;
+.content_heart {
+  position: relative;
+}
+.content_heart .fa-heart {
+  position: absolute;
+  color: black;
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+.content_heart .fa-heart:hover {
+  opacity: 0;
+}
+.content_heart .fa-heart:hover + .fa-heart--chosen {
+  opacity: 1;
+}
+.content_heart .fa-heart--chosen {
+  position: absolute;
+  z-index: -1;
+  color: #B060DB;
+  /*color: rgb(255,121,218);
+  color: linear-gradient(49deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 40%);*/
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+.heart_common {
   display: flex;
   padding-left: 2%;
 }
 
-.heart_position {
+.heart_common_position {
   top: 30%;
 }
 
 section {
-  margin-bottom: 2%;
+  margin-top: 2%;
   padding: 0 2% 0 2%;
   border: none;
-  background-color: #f3f3f3;
 }
 
 .section_title {
@@ -205,12 +228,13 @@ section {
   border: 1px solid #99E2D0;
 }
 
+.menu {
+  margin-bottom: 1%;
+}
 .menu__entree_note--1 {
   height: 70px;
   display: flex;
   position: relative;
-  padding-left: 1%;
-  margin-bottom: 1%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -220,24 +244,10 @@ section {
   -webkit-animation-delay: 750ms;
           animation-delay: 750ms;
 }
-.menu__entree_note--1 .menu_dish_accompaniment {
-  width: 95%;
-}
-.menu__entree_note--1 .menu_dish_accompaniment h3 {
-  margin: 1% 0 0 0;
-}
-.menu__entree_note--1 .menu_dish_accompaniment p {
-  margin: 0 0 1% 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
 .menu__entree_note--2 {
   height: 70px;
   display: flex;
   position: relative;
-  padding-left: 1%;
-  margin-bottom: 1%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -247,24 +257,10 @@ section {
   -webkit-animation-delay: 1500ms;
           animation-delay: 1500ms;
 }
-.menu__entree_note--2 .menu_dish_accompaniment {
-  width: 95%;
-}
-.menu__entree_note--2 .menu_dish_accompaniment h3 {
-  margin: 1% 0 0 0;
-}
-.menu__entree_note--2 .menu_dish_accompaniment p {
-  margin: 0 0 1% 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
 .menu__entree_note--3 {
   height: 70px;
   display: flex;
   position: relative;
-  padding-left: 1%;
-  margin-bottom: 1%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -274,24 +270,10 @@ section {
   -webkit-animation-delay: 2250ms;
           animation-delay: 2250ms;
 }
-.menu__entree_note--3 .menu_dish_accompaniment {
-  width: 95%;
-}
-.menu__entree_note--3 .menu_dish_accompaniment h3 {
-  margin: 1% 0 0 0;
-}
-.menu__entree_note--3 .menu_dish_accompaniment p {
-  margin: 0 0 1% 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
 .menu__entree_note--4 {
   height: 70px;
   display: flex;
   position: relative;
-  padding-left: 1%;
-  margin-bottom: 1%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -300,25 +282,11 @@ section {
           animation: menu 3000ms;
   -webkit-animation-delay: 3000ms;
           animation-delay: 3000ms;
-}
-.menu__entree_note--4 .menu_dish_accompaniment {
-  width: 95%;
-}
-.menu__entree_note--4 .menu_dish_accompaniment h3 {
-  margin: 1% 0 0 0;
-}
-.menu__entree_note--4 .menu_dish_accompaniment p {
-  margin: 0 0 1% 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .menu__plats--1 {
   height: 70px;
   display: flex;
   position: relative;
-  padding-left: 1%;
-  margin-bottom: 1%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -327,25 +295,11 @@ section {
           animation: menu 3000ms;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
-}
-.menu__plats--1 .menu_dish_accompaniment {
-  width: 95%;
-}
-.menu__plats--1 .menu_dish_accompaniment h3 {
-  margin: 1% 0 0 0;
-}
-.menu__plats--1 .menu_dish_accompaniment p {
-  margin: 0 0 1% 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .menu__plats--2 {
   height: 70px;
   display: flex;
   position: relative;
-  padding-left: 1%;
-  margin-bottom: 1%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -355,24 +309,10 @@ section {
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
 }
-.menu__plats--2 .menu_dish_accompaniment {
-  width: 95%;
-}
-.menu__plats--2 .menu_dish_accompaniment h3 {
-  margin: 1% 0 0 0;
-}
-.menu__plats--2 .menu_dish_accompaniment p {
-  margin: 0 0 1% 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
 .menu__plats--3 {
   height: 70px;
   display: flex;
   position: relative;
-  padding-left: 1%;
-  margin-bottom: 1%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -382,24 +322,10 @@ section {
   -webkit-animation-delay: 3000ms;
           animation-delay: 3000ms;
 }
-.menu__plats--3 .menu_dish_accompaniment {
-  width: 95%;
-}
-.menu__plats--3 .menu_dish_accompaniment h3 {
-  margin: 1% 0 0 0;
-}
-.menu__plats--3 .menu_dish_accompaniment p {
-  margin: 0 0 1% 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
 .menu__desserts--1 {
   height: 70px;
   display: flex;
   position: relative;
-  padding-left: 1%;
-  margin-bottom: 1%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -409,24 +335,10 @@ section {
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
 }
-.menu__desserts--1 .menu_dish_accompaniment {
-  width: 95%;
-}
-.menu__desserts--1 .menu_dish_accompaniment h3 {
-  margin: 1% 0 0 0;
-}
-.menu__desserts--1 .menu_dish_accompaniment p {
-  margin: 0 0 1% 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
 .menu__desserts--2 {
   height: 70px;
   display: flex;
   position: relative;
-  padding-left: 1%;
-  margin-bottom: 1%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -436,24 +348,10 @@ section {
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
 }
-.menu__desserts--2 .menu_dish_accompaniment {
-  width: 95%;
-}
-.menu__desserts--2 .menu_dish_accompaniment h3 {
-  margin: 1% 0 0 0;
-}
-.menu__desserts--2 .menu_dish_accompaniment p {
-  margin: 0 0 1% 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
 .menu__desserts--3 {
   height: 70px;
   display: flex;
   position: relative;
-  padding-left: 1%;
-  margin-bottom: 1%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
@@ -462,18 +360,6 @@ section {
           animation: menu 3000ms;
   -webkit-animation-delay: 3000ms;
           animation-delay: 3000ms;
-}
-.menu__desserts--3 .menu_dish_accompaniment {
-  width: 95%;
-}
-.menu__desserts--3 .menu_dish_accompaniment h3 {
-  margin: 1% 0 0 0;
-}
-.menu__desserts--3 .menu_dish_accompaniment p {
-  margin: 0 0 1% 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .menu:hover .anim_validation {
   width: 5%;
@@ -491,6 +377,19 @@ section {
   right: 1%;
   transform: translateX(0);
   transition: transform 450ms;
+}
+
+.menu_dish_accompaniment {
+  width: 95%;
+}
+.menu_dish_accompaniment h3 {
+  margin: 1% 0 0 1%;
+}
+.menu_dish_accompaniment p {
+  margin: 0 0 1% 1%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .anim_validation {
@@ -537,18 +436,42 @@ section {
     border-radius: 30px 30px 0 0;
   }
   .h1 {
-    width: 70%;
+    width: 80%;
     font-size: 1.5em;
     text-align: center;
   }
-  .heart_position {
+  .heart_common {
+    padding-left: 2%;
+  }
+  .heart_common_position {
     top: 45%;
   }
+  section {
+    margin-top: 10%;
+  }
+  .underline {
+    margin-bottom: 4%;
+  }
+  .menu {
+    margin-bottom: 4%;
+  }
   .menu:hover p {
-    width: 75%;
+    width: 70%;
+  }
+  .menu:hover span {
+    transform: translateX(-65px);
   }
   .menu:hover .anim_validation {
-    width: 15%;
+    width: 20%;
+  }
+  .menu span {
+    right: 4%;
+  }
+  .menu_dish_accompaniment h3 {
+    margin: 4% 0 0 4%;
+  }
+  .menu_dish_accompaniment p {
+    margin: 0 0 4% 4%;
   }
 }
 footer {
@@ -853,31 +776,6 @@ footer ul a div {
 .restaurant_card__content span {
   display: inline-block;
   margin: 0 0 10% 10%;
-}
-
-.content_heart {
-  position: relative;
-}
-.content_heart .fa-heart {
-  position: absolute;
-  color: black;
-  opacity: 1;
-  transition: opacity 1000ms;
-}
-.content_heart .fa-heart:hover {
-  opacity: 0;
-}
-.content_heart .fa-heart:hover + .fa-heart--chosen {
-  opacity: 1;
-}
-.content_heart .fa-heart--chosen {
-  position: absolute;
-  z-index: -1;
-  color: #B060DB;
-  /*color: rgb(255,121,218);
-  color: linear-gradient(49deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 40%);*/
-  opacity: 0;
-  transition: opacity 1000ms;
 }
 
 .index_heart_position {

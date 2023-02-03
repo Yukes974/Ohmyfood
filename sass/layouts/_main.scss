@@ -29,21 +29,44 @@
     font-size: 1.5em;
 }
 
-.heart {
-    width: 20%;
+.content_heart {
+    position: relative;
+    .fa-heart {
+        position: absolute;     
+        color: $dark_color;
+        opacity: 1;
+        transition: opacity 1000ms;
+        &:hover {
+            opacity: 0;
+        }
+        &:hover + .fa-heart--chosen{
+            opacity: 1;
+        }
+    }
+    .fa-heart--chosen {
+        position: absolute;
+        z-index: -1;
+        color: #B060DB;
+        /*color: rgb(255,121,218);
+        color: linear-gradient(49deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 40%);*/
+        opacity: 0;
+        transition: opacity 1000ms;
+    }
+}
+
+.heart_common {
     display: flex;
     padding-left: 2%;
 }
 
-.heart_position {
+.heart_common_position {
     top: 30%;
 }
 
 section {
-    margin-bottom: 2%;
+    margin-top: 2%;
     padding: 0 2% 0 2%;
     border: none;
-    background-color: lighten($gloomy_color,45%);
 }
 
 .section_title {
@@ -59,32 +82,19 @@ section {
 }
 
 .menu {
+    margin-bottom: 1%;
     &__entree_note {
         @for $i from 1 through 4 {
             &--#{$i} {
                 height: 70px;
                 display: flex;
                 position: relative;
-                padding-left: 1%;
-                margin-bottom: 1%;
                 background-color: white;
                 border-radius: 10px;
                 box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
                 z-index: 1;
                 animation: menu $anim_dur;
                 animation-delay: anim_delay($anim_dur, $i, 4);
-                .menu_dish_accompaniment {
-                    width: 95%;
-                    h3 {
-                        margin: 1% 0 0 0;
-                    }
-                    p {
-                        margin: 0 0 1% 0;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        overflow: hidden;
-                    }
-                }
             }
         }
     }
@@ -94,26 +104,12 @@ section {
                 height: 70px;
                 display: flex;
                 position: relative;
-                padding-left: 1%;
-                margin-bottom: 1%;
                 background-color: white;
                 border-radius: 10px;
                 box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
                 z-index: 1;
                 animation: menu $anim_dur;
                 animation-delay: anim_delay($anim_dur, $i, 3);
-                .menu_dish_accompaniment {
-                    width: 95%;
-                    h3 {
-                        margin: 1% 0 0 0;
-                    }
-                    p {
-                        margin: 0 0 1% 0;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        overflow: hidden;
-                    }
-                }
             }
         }
     }
@@ -123,26 +119,12 @@ section {
                 height: 70px;
                 display: flex;
                 position: relative;
-                padding-left: 1%;
-                margin-bottom: 1%;
                 background-color: white;
                 border-radius: 10px;
                 box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
                 z-index: 1;
                 animation: menu $anim_dur;
                 animation-delay: anim_delay($anim_dur, $i, 3);
-                .menu_dish_accompaniment {
-                    width: 95%;
-                    h3 {
-                        margin: 1% 0 0 0;
-                    }
-                    p {
-                        margin: 0 0 1% 0;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        overflow: hidden;
-                    }
-                }
             }
         }
     }
@@ -162,6 +144,19 @@ section {
         right: 1%;
         transform: translateX(0);
         transition: transform 450ms;
+    }
+}
+
+.menu_dish_accompaniment {
+    width: 95%;
+    h3 {
+        margin: 1% 0 0 1%;
+    }
+    p {
+        margin: 0 0 1% 1%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
 
@@ -212,21 +207,49 @@ section {
     }
 
     .h1 {
-        width: 70%;
+        width: 80%;
         font-size: 1.5em;
         text-align: center;
     }
 
-    .heart_position {
+    .heart_common {
+        padding-left: 2%;
+    }
+
+    .heart_common_position {
         top: 45%;
     }
 
+    section {
+        margin-top: 10%;
+    }
+
+    .underline {
+        margin-bottom: 4%;
+    }
+
     .menu {
+        margin-bottom: 4%;
         &:hover p {
-            width: 75%;
+            width: 70%;
+        }
+        &:hover span {
+            transform: translateX(-65px);
         }
         &:hover .anim_validation {
-            width: 15%;
+            width: 20%;
+        }
+        span {
+            right: 4%;
+        }
+    }
+
+    .menu_dish_accompaniment {
+        h3 {
+            margin: 4% 0 0 4%;
+        }
+        p {
+            margin: 0 0 4% 4%;
         }
     }
 }
