@@ -151,6 +151,9 @@ section {
     width: 95%;
     h3 {
         margin: 1% 0 0 1%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
     p {
         margin: 0 0 1% 1%;
@@ -196,6 +199,39 @@ section {
     align-items: center;
 }
 
+@media all and (min-width:768px) and (max-width:992px) {
+    section {
+        margin-top: 5%;
+    }
+
+    .underline {
+        width: 7%;
+        margin-bottom: 2%;
+    }
+
+    .menu {
+        margin-bottom: 2%;
+        &:hover .anim_validation {
+            width: 65px;
+        }
+        &:hover span {
+            transform: translateX(-55px);
+        }
+        span {
+            right: 2%;
+        }
+    }
+
+    .menu_dish_accompaniment {
+        h3 {
+            margin: 2% 0 0 2%;
+        }
+        p {
+            margin: 0 0 2% 2%;
+        }
+    }
+}
+
 @media all and (max-width:767px) {
 
     .background_img {
@@ -225,13 +261,17 @@ section {
     }
 
     .underline {
+        width: 14%;
         margin-bottom: 4%;
     }
 
     .menu {
         margin-bottom: 4%;
+        &:hover h3 {
+            width: 65%;
+        }
         &:hover p {
-            width: 70%;
+            width: 65%;
         }
         &:hover span {
             transform: translateX(-65px);

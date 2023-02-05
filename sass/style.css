@@ -384,6 +384,9 @@ section {
 }
 .menu_dish_accompaniment h3 {
   margin: 1% 0 0 1%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu_dish_accompaniment p {
   margin: 0 0 1% 1%;
@@ -428,6 +431,33 @@ section {
   align-items: center;
 }
 
+@media all and (min-width: 768px) and (max-width: 992px) {
+  section {
+    margin-top: 5%;
+  }
+  .underline {
+    width: 7%;
+    margin-bottom: 2%;
+  }
+  .menu {
+    margin-bottom: 2%;
+  }
+  .menu:hover .anim_validation {
+    width: 65px;
+  }
+  .menu:hover span {
+    transform: translateX(-55px);
+  }
+  .menu span {
+    right: 2%;
+  }
+  .menu_dish_accompaniment h3 {
+    margin: 2% 0 0 2%;
+  }
+  .menu_dish_accompaniment p {
+    margin: 0 0 2% 2%;
+  }
+}
 @media all and (max-width: 767px) {
   .background_img {
     height: 290px;
@@ -450,13 +480,17 @@ section {
     margin-top: 10%;
   }
   .underline {
+    width: 14%;
     margin-bottom: 4%;
   }
   .menu {
     margin-bottom: 4%;
   }
+  .menu:hover h3 {
+    width: 65%;
+  }
   .menu:hover p {
-    width: 70%;
+    width: 65%;
   }
   .menu:hover span {
     transform: translateX(-65px);
