@@ -547,8 +547,10 @@ footer {
   padding: 1% 4% 3% 3%;
   background-color: #333333;
 }
-footer h4 {
+footer h5 {
   font-family: "Shrikhand", sans-serif;
+  font-size: 1.1em;
+  font-weight: 100;
   color: white;
 }
 footer ul {
@@ -691,6 +693,13 @@ footer ul a div {
 
 .block_explore {
   margin: 4%;
+}
+.block_explore h1 {
+  font-size: 1.5em;
+}
+.block_explore h2 {
+  font-size: 1em;
+  font-weight: 100;
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {

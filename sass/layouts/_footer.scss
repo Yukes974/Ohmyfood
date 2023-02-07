@@ -1,8 +1,10 @@
 footer {
     padding: 1% 4% 3% 3%;
     background-color: lighten($dark_color, 20%);
-    h4 {
+    h5 {
         font-family: "Shrikhand", sans-serif;
+        font-size: 1.1em;
+        font-weight: 100;
         color: $char_color;
     }
     ul {
