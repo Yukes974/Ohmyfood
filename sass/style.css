@@ -249,6 +249,45 @@ h1 {
 .menu {
   margin-bottom: 1%;
 }
+.menu__entree--1 {
+  height: 70px;
+  display: flex;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  -webkit-animation: menu 3000ms;
+          animation: menu 3000ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+.menu__entree--2 {
+  height: 70px;
+  display: flex;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  -webkit-animation: menu 3000ms;
+          animation: menu 3000ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+.menu__entree--3 {
+  height: 70px;
+  display: flex;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  -webkit-animation: menu 3000ms;
+          animation: menu 3000ms;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+}
 .menu__entree_note--1 {
   height: 70px;
   display: flex;
